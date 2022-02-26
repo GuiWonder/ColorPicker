@@ -1,0 +1,25 @@
+﻿<Window x:Class="ColorPicker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ColorPicker"
+        mc:Ignorable="d"
+        Title="ColorPicker" Height="242" Width="347" Topmost="True" KeyDown="Window_KeyDown" ResizeMode="CanMinimize">
+    <Grid>
+        <Label Content="CursorColor" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+        <Label Content="InputColor" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,105,0,0" RenderTransformOrigin="0.486,0.12"/>
+        <Label Content="RGB" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="39,154,0,0"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="89,10,0,0"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="89,38,0,0"/>
+        <TextBox x:Name="textIn" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="89,105,0,0" Text="FFFFFF" TextChanged="textIn_TextChanged" KeyDown="textIn_KeyDown" MaxLength="6" CharacterCasing="Upper"/>
+        <TextBox x:Name="textBoxR" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="37" Margin="89,156,0,0" TextChanged="textRGB_TextChanged" KeyDown="textBoxRGB_KeyDown"/>
+        <TextBox x:Name="textBoxG" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="37" Margin="131,156,0,0" TextChanged="textRGB_TextChanged" KeyDown="textBoxRGB_KeyDown"/>
+        <TextBox x:Name="textBoxB" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="37" Margin="172,156,0,0" TextChanged="textRGB_TextChanged" KeyDown="textBoxRGB_KeyDown"/>
+        <Rectangle x:Name="Rectangle1" HorizontalAlignment="Left" Height="90" VerticalAlignment="Top" Width="90" Margin="229,10,0,0" Fill="#FFF4F4F5"/>
+        <Rectangle x:Name="Rectangle2"  HorizontalAlignment="Left" Height="90" VerticalAlignment="Top" Width="90" Margin="229,105,0,0" Fill="Black"/>
+        <CheckBox x:Name="CheckBox" Content="TopMost" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="89,76,0,0" IsChecked="True" Click="CheckBox_Click"  />
+        <TextBox x:Name="text10" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="89,128,0,0" Text="0,0,0" TextChanged="textIn_TextChanged" KeyDown="textIn_KeyDown" MaxLength="6" CharacterCasing="Upper" IsReadOnly="True" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0"/>
+        <TextBox x:Name="text16" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="89,181,0,0" Text="#000000" TextChanged="textIn_TextChanged" KeyDown="textIn_KeyDown" MaxLength="6" CharacterCasing="Upper" IsReadOnly="True" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0"/>
+    </Grid>
+</Window>
